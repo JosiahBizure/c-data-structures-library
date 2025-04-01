@@ -232,8 +232,45 @@ void pattern16(int n)
          printf("\n");
     }
 }
+void pattern17(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int space = n - i;
 
+        // Space
+        for (int j = 0; j < space; j++)
+        {
+            printf(" ");
+        }
 
+        // Characters
+        for (int j = 0; j < 2 * i - 1; j++)
+        {
+            char ch = (j < i) ? ('A' + j) : ('A' + 2 * i - 2 - j);
+            printf("%c", ch);
+        }
+
+        // Space
+        for (int j = 0; j < space; j++)
+        {
+            printf(" ");
+        }
+
+        printf("\n");
+    }
+}
+void pattern18(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'A' + n - 1 - i; ch <= 'A' + n - 1; ch++)
+        {
+            printf("%c", ch);
+        }
+        printf("\n");
+    }
+}
 
 
 
@@ -251,7 +288,7 @@ void pattern16(int n)
     int num;
     while (fscanf(inputFile, "%d", &num) == 1)
     {
-        pattern16(num);
+        pattern18(num);
     }
 
     fclose(inputFile);
