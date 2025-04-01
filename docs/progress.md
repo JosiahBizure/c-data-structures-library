@@ -94,5 +94,30 @@ This document serves as a daily record of my progress, thoughts, and learning jo
 
 ---
 
-## Next Steps:
-- Complete **Step 1 (Learn the Basics)**, **Lesson 2 (Patterns)**.
+## March 30th, 2025 (Sunday)
+
+## Activities:
+- Today, I worked on **Step 1 (Learn the Basics)**, **Lesson 2 (Build-up Logical Thinking)** of Striver's A2Z DSA Course by practicing pattern printing in C. The goal was to strengthen my understanding of loops and nested loops, which are fundamental for implementing more complex algorithms and data structures later. (See practice/patterns.c)
+
+---
+
+## March 31st, 2025 (Monday)
+
+## Activities:
+- Today, I completed **Step 1 (Learn the Basics)**, **Lesson 3 (Build-up Logical Thinking)** of Striver's A2Z DSA Course by watching the lecture about the C++ STL. Since I'll be implementing my own C STL or similar structures, understanding the C++ STL concepts will help guide my implementation and improve my data structures knowledge overall. Additionally, I continued to practice patterns.
+
+Key Takeaways from C++ STL Lecture:
+
+Covered various containers and their time complexities: vectors, lists, deques, stacks, queues, priority queues, sets, multisets, unordered sets, maps, multimaps, unordered maps.
+
+Learned about iterators, their purpose, and how they differ from pointers in terms of flexibility and traversal capabilities.
+
+Explored algorithms provided by the STL, including sorting, max and min element finding, next permutation, and more.
+
+Reinforced the importance of leveraging these existing data structures to save time and effort when applicable, while also gaining insight into how they are implemented.
+
+Relevance to the Project:
+
+Understanding the C++ STL will help me think critically about how to build efficient data structures from scratch in C, particularly in terms of time complexity and functionality.
+
+---
