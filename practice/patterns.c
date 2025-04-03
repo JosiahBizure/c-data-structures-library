@@ -271,13 +271,92 @@ void pattern18(int n)
         printf("\n");
     }
 }
+void pattern19(int n){}
 
+
+
+int count(int n)
+{
+    if (n < 0) return 0;
+
+    int res = 0;
+    while (n > 0)
+    {
+        n /= 10;
+        res++;
+    }
+    return res;
+}
+void printrevnum(int n)
+{
+    if (n < 0) return;
+    while (n % 10 == 0 && n != 0)
+    {
+        ; // Remove all of the trailing zeros
+    }
+
+    while (n != 0)
+    {
+        printf("%d", n % 10);
+        n /= 10;
+    }
+}
+void ispalindrome(int n)
+{
+    int orig_n = n, revnum = 0, last_digit;
+
+    if (n < 0) printf("n is invalid negative number");
+    while (n > 0)
+    {
+        last_digit = n % 10;
+        revnum = (revnum * 10) + last_digit;
+        n /= 10;
+    }
+
+    (orig_n == revnum) ? printf("true") : printf("false");
+}
+int isarmstrong(int n)
+{
+    if (n < 0) return -1;
+    int sum = 0, orig_n = n;
+    while (n > 0)
+    {
+        sum += (n % 10) * (n % 10) * (n % 10);
+        n /= 10;
+    }
+    return orig_n == sum;
+}
+int countdivisors(int n)
+{
+    if (n < 0) return -1;
+    int count = 0;
+    for (int i = 1; i < sqrt(n); i++)
+    {
+        if (n % i != 0)
+        {
+            if (n / i == i)
+            {
+                count++;
+            }
+            else
+            {
+                count += 2;
+            }
+        }
+    }
+    return count;
+}
 
 
 
 
  int main()
  {
+
+
+
+
+
     FILE* inputFile = fopen("input.txt", "r");
     if (inputFile == NULL)
     {
@@ -288,7 +367,7 @@ void pattern18(int n)
     int num;
     while (fscanf(inputFile, "%d", &num) == 1)
     {
-        pattern18(num);
+        pattern19(num);
     }
 
     fclose(inputFile);

@@ -121,3 +121,19 @@ Relevance to the Project:
 Understanding the C++ STL will help me think critically about how to build efficient data structures from scratch in C, particularly in terms of time complexity and functionality.
 
 ---
+
+## April 1st, 2025 (Tuesday)
+
+## Activities:
+No work done on this project today due to being busy with school.
+
+---
+
+## April 2nd, 2025 (Wednesday)
+
+## Activities:
+Worked on Step 1 (Learn the Basics), Lecture 4 (Know Basic Maths) from Striver's A2Z DSA Course.
+
+Implemented several basic math functions, including counting digits, reversing a number, checking for palindromes, checking for Armstrong numbers, and printing all divisors.
+
+---
